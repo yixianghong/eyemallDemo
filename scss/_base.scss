@@ -1,0 +1,358 @@
+/*常用色 */
+$html-color:#E5E5E5;
+/*白*/
+$white-color: #ffffff;
+$bg-color: #f8f8f8;
+/*灰*/
+$pale-grey-color: #f3f3f3;
+$light-grey-color: #ebebeb;
+$grey-color: #c4c4c4;
+$medium-grey-color: #a6a6a6;
+$little-light-grey-color: #a29892;
+$little-dark-grey-color: #5a6168;
+$dark-grey-color: #656565;
+$very-light-grey-color: #f4f5f4;
+$border-grey-color: #cccccc;
+/*綜合*/
+$red-color: #e02e2e;
+$light-red-color: #b65148;
+$lutein-purple-color: #ca93d9;
+$yellow-color: #ffcc55;
+$lignt-purple-color: #84646c;
+$skin-color: #e2cbb9;
+$dark-skin-color: #b26b4d;
+
+/*藍*/
+$light-blue-color: #649dc2;
+$blue-color: #0e4666;
+$dark-blue-color: #1972a0;
+/*棕*/
+$brown-color: #bd832d;
+$dark-brown-color: #766539;
+$vary-dark-brown-color: #784a32;
+$little-dark-brown-color: #85563d;
+$light-brown-color: #7c5948;
+$special-dark-color: #392117;
+
+/*綠*/
+$lutein-green-color: #96cf20;
+$light-green-color: #b8cb47;
+$little-light-green-color: #a3a28e;
+$dark-green-color: #434a35;
+$green-color: #63c856;
+$hover-green-color: #59b44d;
+
+$green-apple-color: #828e8e;
+$light-green-apple-color: #a9c0c2;
+$dark-green-apple-color: #64634f;
+
+/*黑*/
+$block-color: #161b18;
+
+$font-size-12: 12px;
+$font-size-13: 13px;
+$font-size-14: 14px;
+$font-size-16: 16px;
+$font-size-18: 18px;
+$font-size-20: 20px;
+$font-size-24: 24px;
+$font-size-30: 30px;
+$font-size-35: 35px;
+
+$border-radius-5: 5px;
+$border-radius-10: 10px;
+
+@mixin shadowNormal {
+  -webkit-box-shadow: 0px 4px 12px -4px #b0b0b0;
+  box-shadow: 0px 4px 12px -4px #b0b0b0;
+}
+
+@mixin Vertically {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin card-border-radius-style {
+  border-radius: $border-radius-10;
+  overflow: hidden;
+}
+
+@mixin card-padding-style {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+html,
+body {
+  color: $dark-grey-color;
+  // font-family: "Poppins", "Noto Sans HK";
+  font-size: $font-size-16;
+  font-weight: 400;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+.btn {
+  border: 0.5px solid transparent;
+}
+
+.xs-text {
+  font-size: $font-size-12;
+}
+
+.sm-text {
+  font-size: $font-size-13;
+}
+
+.little-sm-text {
+  font-size: $font-size-14;
+}
+
+.md-text {
+  font-size: $font-size-16;
+}
+.big-md-text {
+  font-size: $font-size-18;
+}
+
+.lg-text {
+  font-size: $font-size-20;
+}
+
+.xl-text {
+  font-size: $font-size-24;
+}
+
+.xxl-text {
+  font-size: $font-size-30;
+}
+
+.xxxl-text {
+  font-size: $font-size-35;
+}
+
+.border-radius-10 {
+  border-radius: $border-radius-10;
+}
+
+.reset-page-padding-top {
+  padding-top: 144px;
+  margin-bottom: 40px;
+}
+
+.z-index-99 {
+  z-index: 99;
+}
+
+a {
+  color: $dark-grey-color;
+  font-size: $font-size-16;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+sub {
+  bottom: 0;
+}
+
+.black-color{
+  color: $block-color !important;
+}
+
+.white-color {
+  color: $white-color !important;
+}
+.green-color {
+  color: $green-color !important;
+}
+.dark-grey-color {
+  color: $dark-grey-color !important;
+}
+
+.light-grey-color {
+  color: $light-grey-color !important;
+}
+
+.grey-color {
+  color: $grey-color;
+}
+
+
+
+.medium-grey-color {
+  color: $medium-grey-color;
+}
+
+.red-color {
+  color: $red-color;
+}
+
+.lutein-purple-color {
+  color: $lutein-purple-color;
+}
+
+.yellow-color {
+  color: $yellow-color;
+}
+
+.dark-blue-color {
+  color: $dark-blue-color;
+}
+
+.background-bg{
+  background:$bg-color;
+}
+
+.background-white {
+  background: $white-color !important;
+}
+
+.background-normal {
+  background: $bg-color !important;
+}
+
+.background-green {
+  background: $green-color !important;
+}
+
+.box-content {
+  box-sizing: content-box;
+}
+
+.tabActive {
+  border-bottom: 3px solid $green-color;
+  color: $green-color;
+}
+
+.dark-grey-border {
+  border-color: $dark-grey-color;
+}
+
+.gray-border-nav {
+  border-bottom: 1px solid $grey-color;
+
+  a {
+    &:hover {
+      color: $green-color;
+    }
+  }
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  left: -10px;
+  right: auto;
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  right: -10px;
+  left: auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: $dark-grey-color;
+  &:after {
+    font-size: $font-size-16;
+  }
+
+  &:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+  }
+}
+
+.swiper-pagination-bullet {
+  background: $grey-color !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: $green-color !important;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+
+.BannerBox {
+  margin-bottom: 20px;
+}
+
+.titleBox {
+  background: $white-color;
+
+  &:after {
+    content: "";
+    width: 100%;
+    height: 0.5px;
+    z-index: -1;
+    background: $light-grey-color;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+}
+
+.card-header {
+  width: 242px;
+  height: 242px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 0px;
+  background: $white-color;
+}
+
+.page-item {
+  .page-link {
+    border: 0;
+    color:$dark-grey-color;
+    width: 34px;
+    height: 34px;
+  }
+
+  &.active {
+    .page-link {
+      background-color: $green-color;
+      color:$white-color;
+      border-radius: 10px;
+    }
+  }
+}
+
+
+.layoutGrey{
+  width: 100%;
+  height: 100%;
+  background: $bg-color;
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  top:0;
+}
+
+.my-page-enter-active,
+.my-page-leave-active {
+  transition: opacity 0.5s;
+}
+.my-page-enter,
+.my-page-leave-to {
+  opacity: 0;
+}

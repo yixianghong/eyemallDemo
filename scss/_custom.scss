@@ -1,0 +1,66 @@
+// Custom Bootstrap variable overrides go first
+$grid-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 640px,
+  lg: 992px,
+  xl: 1300px
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 1180px,
+  lg: 1180px,
+  xl: 1180px
+) !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "purple":     $lutein-purple-color,
+    "yellow":     $yellow-color,
+    "lutein-green":      $lutein-green-color,
+    "green":      $green-color,
+    "white": $white-color,
+    "dark-green-color":     $dark-green-color,
+    "light-green-color":      $light-green-color,
+    "light-blue-color": $light-blue-color,
+    "dark-blue-color":$dark-blue-color,
+    "bg-color":$bg-color,
+    "dark-brown-color":$dark-brown-color,
+    "blue-color":$blue-color,
+    "little-light-grey-color":$little-light-grey-color,
+    "little-dark-grey-color":$little-dark-grey-color,
+    "vary-dark-brown-color":$vary-dark-brown-color,
+    "lignt-purple-color":$lignt-purple-color,
+    "skin-color":$skin-color,
+    "little-light-green-color":$little-light-green-color,
+    "little-dark-brown-color":$little-dark-brown-color,
+    "light-brown-color":$light-brown-color,
+    "special-dark-color":$special-dark-color,
+    "green-apple-color":$green-apple-color,
+    "light-red-color":$light-red-color,
+    "light-green-apple-color":$light-green-apple-color,
+    "dark-green-apple-color":$dark-green-apple-color,
+    "block-color":$block-color,
+    "dark-skin-color":$dark-skin-color,
+
+
+
+
+
+
+  ),
+  $theme-colors
+);
+$font-weight-bold:            600;
+ $font-family-sans-serif:  "Poppins", "Noto Sans";
+
+$enable-rounded: false;
+
+// Then include the following
+ @import '../node_modules/bootstrap/scss/bootstrap.scss';
+ @import '../node_modules/bootstrap-vue/src/index.scss';
+ @import '../node_modules/bootstrap-vue/src/icons.scss'
+// And define any of your custom or additional CSS/SCSS here,
+// or via an @import
