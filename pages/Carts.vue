@@ -123,7 +123,7 @@ export default {
           <span>$ 200</span>
         </div>
         <div class="d-flex justify-content-between">
-          <span>運費1111111</span>
+          <span>運費</span>
           <span>$ 80</span>
         </div>
         <div class="d-flex justify-content-between">
